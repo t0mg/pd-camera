@@ -18,7 +18,7 @@ For the detailed bill of material and assembly instructions, hop over to the [ha
 
 To flash the Teensy microcontroller with the project's firmware, you'll need the [Teensy loader application](https://www.pjrc.com/teensy/loader.html). 
 
-If you don't want to modify the source, you can directly grab a prebuilt `firmware.hex` file from the repository's [releases](/releases). Otherwise, read on to build your own.
+If you don't want to modify the source, you can directly grab a prebuilt `firmware.hex` file from the repository's [releases](https://github.com/t0mg/pd-camera/releases). Otherwise, read on to build your own.
 
 ### Building
 
