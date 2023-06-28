@@ -2,9 +2,21 @@
 
 PD-Camera is an unofficial, experimental accessory for Panic's [Playdate](https://play.date) handheld console, which as the name hopefully suggests allows the device to record pictures as well as animated gifs, in whopping  1-bit color and QVGA (320x240) resolution. Kind of like the [1998 accessory for that other monochrome handheld device](https://en.wikipedia.org/wiki/Game_Boy_Camera).
 
-For more context on how this project came along, you can find its devlog [on Playdate's Dev forum](https://devforum.play.date/t/playdate-oneil-camera/11043/28).
+For more context on how this project came to be, you can find its devlog [on Playdate's Dev forum](https://devforum.play.date/t/playdate-oneil-camera/11043).
 
-This repository contains the hardware and firmware of the PD-Camera accessory. The source for the companion app that runs on the Playdate itself _will eventually_ be found [here](https://github.com/t0mg/pd-camera).
+This repository contains the hardware and firmware of the PD-Camera accessory. The source for the companion app that runs on the Playdate itself _will eventually_ be found [here](https://github.com/t0mg/pd-camera-app).
+
+## Overview
+
+The Playdate can be attached to the camera accessory in three distinct configurations: **cover**, **camera**, and **selfie**.
+
+The accessory is holding onto the Playdate with small magnets. In **camera mode**, A USB C cable plugs into the console and disappears inside a "chin" in the bottom of the accessory. In **cover mode** the Playdate can be unplugged and flipped with its screen facing backwards, in order to lay flat and protect it during transport.
+
+![Transforming from cover mode to camera mode](images/cover-mode.gif)
+
+The Playdate can also be fitted on the back of the accessory, without unplugging the cable, allowing to switch the camera to **selfie mode** (the companion app has a mirror optiono so it doesn't feel awkward). Additional magnets are here to secure the console in this configuration too.
+
+![Switching to selfie mode](images/selfie-mode.gif)
 
 ## Hardware
 
@@ -24,7 +36,7 @@ If you don't want to modify the source, you can directly grab a prebuilt `firmwa
 
 This project uses [PlatformIO](https://platformio.org/) to manage dependencies and build toolchain, see [platformio.ini](platformio.ini).
 
-The source code comprises a single, messy, [main.cpp](src/main.cpp) file which relies the following excellent libraries:
+The source code comprises a single, messy, [main.cpp](src/main.cpp) file which relies on the following excellent libraries:
 
   -	[USBHost_t36](https://github.com/PaulStoffregen/USBHost_t36) by [PaulStoffregen](https://github.com/PaulStoffregen)
   - [OV7670](https://github.com/mjborgerson/OV7670) by [mjborgerson](https://github.com/mjborgerson)
