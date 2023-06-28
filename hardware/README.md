@@ -1,4 +1,4 @@
-This folder will contains files and instruction necessary to build the PD-Camera hardware.
+This folder contains files and instruction necessary to build the PD-Camera hardware.
 
 ## Bill of materials
 
@@ -60,7 +60,7 @@ Fit the Teensy flush onto the PCB, solder all pins and then cut off the protrudi
 
 Cut 2 female header bars to 9 pins each and solder them to the PCB to create a makeshift connector for the OV7670 module. Also cut off the pins underneath.
 
-Cut the angled USB C cable at about 25cm and discard the USB A connector. Strip and solder the 4 USB wires to the PCB (red to +5v, white to D-, green to D+, and black to GND).
+Cut the angled USB C cable at about 25cm and discard the USB A connector. Strip and solder the 4 USB wires to the PCB (*usually*, red for +5v, white for D-, green for D+, and black for GND).
 
 Solder BATT +5v and GND from the main PCB to the +5 and GND of the power circuit PCB with short wires, and finally solder the + and - battery pads of the power circuit to your LiPo battery. You can also do (or redo) this step after assembling the case in order to optimize your wiring.
 

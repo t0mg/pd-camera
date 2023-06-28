@@ -10,7 +10,7 @@ This repository contains the hardware and firmware of the PD-Camera accessory. T
 
 The Playdate can be attached to the camera accessory in three distinct configurations: **cover**, **camera**, and **selfie**.
 
-The accessory is holding onto the Playdate with small magnets. In **camera mode**, A USB C cable plugs into the console and disappears inside a "chin" in the bottom of the accessory. In **cover mode** the Playdate can be unplugged and flipped with its screen facing backwards, in order to lay flat and protect it during transport.
+The accessory is holding onto the Playdate with small magnets. In **camera mode**. A USB C cable plugs into the console and disappears inside a "chin" in the bottom of the accessory. In **cover mode** the Playdate can be unplugged and flipped with its screen facing backwards, in order to lay flat and protect it during transport.
 
 ![Transforming from cover mode to camera mode](images/cover-mode.gif)
 
