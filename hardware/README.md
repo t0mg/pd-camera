@@ -72,6 +72,8 @@ Once you're confident with your solder joints, put your cutting pliers at work a
 
 The case has 4 parts (body, chin, cover, camera cap) plus an optional flat spring. I printed them all in one go on a Prusa Mk3S, in PETG at 0.2mm Speed mode, default settings and without support (the flat face of each part should be laid flat the print bed).
 
+![Screenshot from the OnShape project showing the 4 parts](../images/3d-model.png)
+
 //TODO: add screenshot from Prusa slicer
 
 Ready to slice STL files are [here](case/). The entire source project is also available in OnShape [here](https://cad.onshape.com/documents/e21c7f87f60d07934982913d/w/b97fe7733e7e7384ebf3b9fe/e/61bb6eb626a207e4d2b47202).
