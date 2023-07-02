@@ -24,7 +24,7 @@ This folder contains files and instruction necessary to build the PD-Camera hard
 
 Given that OV7670 boards are so cheap, I experimented with various available mounts. The case makes it easy to swap out the entire sensor board so you could have several with each a different lens and/or mount.
 
-![A PD-Camera with a CS mount, telephoto lens](../images/cs-lens.png)
+![A PD-Camera with a CS mount, telephoto lens](../images/cs-lens.jpg)
 
 Not all mounts are compatible and I had to do a bit of trial and error to find combinations of mounts and lenses that gives interesting results.
 
@@ -44,7 +44,7 @@ The Gerber file for the PCB can be found [in the pcb folder](pcb/). It's 2 layer
 
 The large empty and seemingly useless part of the PCB is actually visible through button pockets on the face of the case, so the color you'll pick for the PCB matters. You can also customize the bottom silk screen with markings that will be visible when the Playdate is not installed!
 
-![A picture showing the button pockets on the 3D printed case and the purple PCB underneath](../images/button-pockets.png)
+![A picture showing the button pockets on the 3D printed case and the purple PCB underneath](../images/button-pockets.jpg)
 
 ## Electronics assembly
 
