@@ -5,6 +5,7 @@ PD-Camera is an unofficial, experimental accessory for [Panic Inc.](https://pani
 > **This repository contains the hardware and firmware of the PD-Camera accessory. The source for the companion app that runs on the Playdate itself can be found [here](https://github.com/t0mg/pd-camera-app).**
 
 Here's a one minute intro video (click to watch).
+
 [![Watch the project's trailer video on YouTube](https://img.youtube.com/vi/sbAL9xYFmcQ/0.jpg)](https://www.youtube.com/watch?v=sbAL9xYFmcQ)
 
 For more context on how this project came to be, you can find its devlog [on Playdate's Dev forum](https://devforum.play.date/t/playdate-oneil-camera/11043).
