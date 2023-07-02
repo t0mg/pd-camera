@@ -52,11 +52,18 @@ If you don't want to modify the source, you can directly grab a prebuilt `firmwa
 
 This project uses [PlatformIO](https://platformio.org/) to manage dependencies and build toolchain, see [platformio.ini](platformio.ini).
 
-The source code comprises a single, messy, [main.cpp](src/main.cpp) file which relies on the following excellent libraries:
+The source code comprises a single, messy [main.cpp](src/main.cpp) file, which relies on a few excellent libraries listed below.
 
-  -	[USBHost_t36](https://github.com/PaulStoffregen/USBHost_t36) by [PaulStoffregen](https://github.com/PaulStoffregen)
+## Credits
+
+Dependencies
+  -	[USBHost_t36](https://github.com/PaulStoffregen/USBHost_t36) by 
+  [PaulStoffregen](https://github.com/PaulStoffregen)
   - [OV7670](https://github.com/mjborgerson/OV7670) by [mjborgerson](https://github.com/mjborgerson)
   - [dithering_halftoning](https://github.com/deeptronix/dithering_halftoning) by [deeptronix](https://github.com/deeptronix)
+
+Made possible by
+- https://github.com/jaames/playdate-reverse-engineering by [jaames](https://github.com/jaames)
 
  ----
 

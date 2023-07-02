@@ -18,10 +18,17 @@ This folder contains files and instruction necessary to build the PD-Camera hard
 |Angled USB C to USB A cable|1|25 cm minimum; [example (amazon.fr)](https://www.amazon.fr/dp/B07H95NY5Y)
 |PETG filament for the 3D printed parts 🙂|
 |Some wires, solder...|
+| *Optional:* CS mount & CS lenses || TODO: add references
 
-*Optional:* CS mount & CS lenses 
+### CS and M12 mounts
 
-//TODO: add references
+Given that OV7670 boards are so cheap, I experimented with various available mounts. The case makes it easy to swap out the entire sensor board so you could have several with each a different lens and/or mount.
+
+![A PD-Camera with a CS mount, telephoto lens](../images/cs-lens.png)
+
+Not all mounts are compatible and I had to do a bit of trial and error to find combinations of mounts and lenses that gives interesting results.
+
+// TODO: add some refrerences here if there's interest.
 
 ## Custom PCB
 
@@ -68,34 +75,66 @@ Almost done! Time to sideload the Playdate app (from [this repository](https://w
 
 Once you're confident with your solder joints, put your cutting pliers at work and make sure nothing protrudes underneath by more than a millimeter or so.
 
-## 3D print
+## 3D printed case
 
-The case has 4 parts (body, chin, cover, camera cap) plus an optional flat spring. I printed them all in one go on a Prusa Mk3S, in PETG at 0.2mm Speed mode, default settings and without support (the flat face of each part should be laid flat the print bed).
+The case has 4 parts (body, chin, cover, camera cap) plus an optional flat spring that can help make the USB cable pop out of the chin. It was designed with OnShape (and Freecad orignally but I had to migrate).
 
-![Screenshot from the OnShape project showing the 4 parts](../images/3d-model.png)
+Many iterations went into the design. The whole case could be more compact, especially with a smaller battery and fewer features. For example, without the selfie system the chin system could be removed and the USB cable replaced with a simple dock connector. However after many iterations I decided to prioritizes versatility and ergonomics over compactness.
 
-//TODO: add screenshot from Prusa slicer
+![A drawing of the case from the OnShape project](../images/3d-model.png)
 
-Ready to slice STL files are [here](case/). The entire source project is also available in OnShape [here](https://cad.onshape.com/documents/e21c7f87f60d07934982913d/w/b97fe7733e7e7384ebf3b9fe/e/61bb6eb626a207e4d2b47202).
+![Exploded view from the OnShape project showing all the parts](../images/3d-model-exp.png)
+
+### Printing instructions
+
+You can find the STL files [here](/hardware/case/). All the parts can be printed in one go on a Prusa Mk3S, in PETG at 0.2mm Speed mode, default settings. They were designed to print without support if you lay each part on its flat face. These are external facing sides that take advantage of a textured print bed for a better finish.
+
+Printing takes about 4.5 hours and 61g of filament in total.
+
+![Screenshot of all the parts in Prusa Slicer](../images/slicer.png)
+
+Should you want to make changes, the entire source project is available publicly in OnShape [here](https://cad.onshape.com/documents/e21c7f87f60d07934982913d/w/b97fe7733e7e7384ebf3b9fe/e/61bb6eb626a207e4d2b47202).
 
 ## Putting it all together
+
+### Installing the PCB
 
 The PCB slides in and snaps without the need of any tool but it is a tight fit and requires a precise gesture and a bit of force. But don't be scared, the case is sturdy and my PETGs print survived way more assemblies and disassemblies than you should ever need to perform.
 
 Start with the top of the PCB, fitting the little power switch through its hole in the case. Make sure the PCB is flush to the left side of the case, then lower its bottom part slowly. You'll now need to align the Teensy's USB port to the hole in the case on the right. Once it's aligned, push the PCB to the right so it gets in by a millimeter or so. Now press firmly on the PCB to snap it past the tiny leg on the right between USB and power wires, and then the snap lock on the bottom left. It's quite tight, but you can flex the edge of the case slightly outwards near the snap lock while pressing to help the PCB make it through.
 
-Slide the power circuit in place.
+### Power circit
 
-The male USB C connector goes through a dedicated hole, keep the cable loose at this stage.
+Slide the power circuit in place at a 45 degree angle. Insert the female USB C connector into its socket, then press the back of the board to lock it in place. It should be horizontal.
 
-Flip the case and take the chin piece and your playdate. Connect it, align it with the chin and work backwards to set the length of the cable.
+### USB Cable and chin
+
+The male USB C connector goes through a dedicated hole. Keep the cable loose at this stage.
+
+Flip the case and take the chin piece and your Playdate. Connect it, align it with the chin and work backwards to set the length of the cable.
 
 You can add the optional spring part by just sliding it into the chin, this little piece helps when the cable is a bit too stiff to pop out naturally, but makes the "cover mode" a bit more difficult. Either way you can easily disassemble the case to add or remove this part later.
 
 Snap fit the chin part into the main body part then flip it back and secure the remaining part of the USB cable.
 
-Press fit the eight neodymium magnets into their respective holes. I found that it helps to stack 2 of them to align with the hole and initiate a good vertical fit, then to flip the case and press it flush against a table to push the magnet all the way in.
+### Battery
+
+Now is the time to install the battery and tidy all your wires inside the case. The 5000mAh battery fits (barely) under the Teensy, with its edges touching the Teensy and the right side of the connector of the camera module. 
+
+### Cover
 
 To put the cover, there are 3 snap fit locks to work with. First align the top one, then the right one. Finally flex the cover and push firmly on the left snap lock. To reopen the case you'd insert a spatula, blade or flat screw driver above the left snap lock and use it as a lever to free it.
 
-The camera cap is also press fit. It comes off easily so you can swap the camera module if you have different lens mounts, without having to remove the cover part. Otherwise you can add a bit of super glue to attach the camera cap to the cover plate permanently.
+### Camera module and camera cap
+
+You can insert the OV7670 Camera module now.
+
+The camera cap part is also press fit. It comes off easily on purpose, so you can swap the camera module if you have different lens mounts, without having to remove the cover part. Otherwise, you can add a bit of super glue to attach the camera cap to the cover plate permanently.
+
+### Magnets
+
+Press fit the eight neodymium magnets into their respective holes. I found that it helps to stack 2 of them to align with the hole and initiate a good vertical fit, then to flip the case and press it flush against a table to push the magnet all the way in. If they feel loose you can add a drop of superglue to secure them.
+
+### Pat yourself in the back
+
+Congratulation, you've built your own PD-Camera! 😊
