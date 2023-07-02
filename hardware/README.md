@@ -4,16 +4,16 @@ This folder contains files and instruction necessary to build the PD-Camera hard
 
 |Item| Quantity|Notes
 |---|---|---|
-|Custom PCB|1|Order from jlcpcb or oshpark see Gerber files
+|Custom PCB|1|Order from [JLCPCB](https://jlcpcb.com) or [OSH Park](https://oshpark.com/) see Gerber files
 |Teensy 4.1 microcontroller| 1|[PJCRC store](https://www.pjrc.com/store/teensy41.html)
-|OV7670 camera module|1|[example (amazon.fr)](https://www.amazon.fr/dp/B07V1FCLXG?)
+|OV7670 camera module|1|[Example (amazon.fr)](https://www.amazon.fr/dp/B07V1FCLXG?)
 |Male headers, 24 pins |2 |0.1 inch (2.54 mm) spacing, for the Teensy
 |Male headers,  4 or 5 pins |1 |0.1 inch (2.54 mm) spacing, for the Teensy's USB host port
 |Female headers, 9pins | 2 | 0.1 inch (2.54 mm) spacing, for the camera module, to be cut from a standard length header
 |Resistor 4k Ohm, through hole|2|
 |Toggle switch SK12D07|1|
 |Booster/charger USB C|1| The case is designed to fit this specific one from [aliexpress (5PCS 5V 2A USB)](https://a.aliexpress.com/_Ez5FiBT). For others you'll need to modify the 3D model before printing.
-|3.7v LiPo battery|1| Should fit in the case (add dimensions). I used a 5000 mAh battery I extracted from [this pack (amazon.fr)](https://www.amazon.fr/dp/B082PPR281).
+|3.7v LiPo battery|1| Should fit in the case (max size approx. 55 x 66 x 10 mm). I used a 5000 mAh battery I extracted from [this pack (amazon.fr)](https://www.amazon.fr/dp/B082PPR281).
 |Neodymium magnets 5x5mm|8| Will hold the Playdate securly in place, [example (amazon.fr)](https://www.amazon.fr/dp/B00TACGMJW)
 |Angled USB C to USB A cable|1|25 cm minimum; [example (amazon.fr)](https://www.amazon.fr/dp/B07H95NY5Y)
 |PETG filament for the 3D printed parts 🙂|
@@ -31,7 +31,7 @@ This is the wiring implemented by the PCB, it follows the documentation from the
 
 ![Wiring circuit](../images/circuit.png)
 
-The Gerber file for the PCB can be found [in the pcb folder](pcb/). It's 2 layer, standard thickness (1.57mm / 0.062 in). You can get one made from services such as [OSHPark](https://oshpark.com/) or [JLCPCB](https://jlcpcb.com/) for a few USD.
+The Gerber file for the PCB can be found [in the pcb folder](pcb/). It's 2 layer, standard thickness (1.57mm / 0.062 in). You can get one made from services such as [OSH Park](https://oshpark.com/) or [JLCPCB](https://jlcpcb.com/) for a few USD.
 
 ![A rendered view of the PCB](../images/pcb.png)
 

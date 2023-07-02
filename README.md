@@ -1,10 +1,25 @@
 # PD-Camera project
 
-PD-Camera is an unofficial, experimental accessory for Panic's [Playdate](https://play.date) handheld console, which as the name hopefully suggests allows the device to record pictures as well as animated gifs, in whopping  1-bit color and QVGA (320x240) resolution. Kind of like the [1998 accessory for that other monochrome handheld device](https://en.wikipedia.org/wiki/Game_Boy_Camera).
+PD-Camera is an unofficial, experimental accessory for [Panic Inc.](https://panic.com/)'s [Playdate](https://play.date) handheld console, which as the name hopefully suggests allows the device to record pictures as well as animated gifs, in whopping  1-bit color and QVGA (320x240) resolution. Kind of like the [1998 accessory for that other monochrome handheld device](https://en.wikipedia.org/wiki/Game_Boy_Camera).
+
+> **This repository contains the hardware and firmware of the PD-Camera accessory. The source for the companion app that runs on the Playdate itself can be found [here](https://github.com/t0mg/pd-camera-app).**
+
+Here's a one minute intro video (click to watch).
+[![Watch the project's trailer video on YouTube](https://img.youtube.com/vi/sbAL9xYFmcQ/0.jpg)](https://www.youtube.com/watch?v=sbAL9xYFmcQ)
 
 For more context on how this project came to be, you can find its devlog [on Playdate's Dev forum](https://devforum.play.date/t/playdate-oneil-camera/11043).
 
-This repository contains the hardware and firmware of the PD-Camera accessory. The source for the companion app that runs on the Playdate itself _will eventually_ be found [here](https://github.com/t0mg/pd-camera-app).
+## Disclaimer
+
+This project is 
+- not affiliated with nor endorsed by [Panic Inc.](https://panic.com/), 
+- highly experimental,
+- hacky in 
+  - every
+  - possible
+  - way.
+
+While I crashed my own Playdate countless times working on this, and it has survived so far, I cannot be held responsible for any damage, data loss, bad selfie, pandemic, etc. that might occur to you while playing with this project. Use this at your own risk. Thanks ❤️.
 
 ## Overview
 
@@ -20,9 +35,9 @@ The Playdate can also be fitted on the back of the accessory, without unplugging
 
 ## Hardware
 
-The project is based on a [Teensy 4.1 microcontroller](https://www.pjrc.com/store/teensy41.html) that acts as a USB host to the Playdate and communicates with it over serial, including evaluating payloads in the Lua runtime (see [here](https://github.com/jaames/playdate-reverse-engineering/blob/main/usb/usb.md) for more details). The Teensy is also connected to an OV7670 camera module via its CMOS Sensor Interface (CSI) built into the IMXRT1062 MPU and using [this dedicated library](https://github.com/mjborgerson/OV7670).
+The project is based on a [Teensy 4.1 microcontroller](https://www.pjrc.com/store/teensy41.html) that acts as a USB host to the Playdate and communicates with it over serial, including evaluating payloads in the Lua runtime (see [here](https://github.com/jaames/playdate-reverse-engineering/blob/main/usb/usb.md) for more details). The Teensy is also connected to an OV7670 camera module via its CMOS Sensor Interface (CSI) built into the IMXRT1062 MPU and using [this dedicated library](https://github.com/mjborgerson/OV7670). The images produced are 1-bit, QVGA (320x240 pixels) and recorded directly in the Playdate's filesystem. The Teensy takes care of dithering the images in various ways before sending them to the Playdate.
 
-A battery, custom PCB and a custom 3D-printable case complete the hardware (gerber and stl files _will eventually be_ provided in this repository).
+A battery, custom PCB and a custom 3D-printable case complete the hardware ([gerber](hardware/pcb) and [stl](hardware/case) files are provided in this repository).
 
 For the detailed bill of material and assembly instructions, hop over to the [hardware folder](/hardware/).
 
