@@ -1,4 +1,6 @@
-This folder contains files and instruction necessary to build the PD-Camera hardware.
+This folder contains all files and instruction necessary to build the PD-Camera hardware.
+
+![A drawing of the case from the OnShape project](../images/3d-model.png)
 
 ## Bill of materials
 
@@ -79,9 +81,7 @@ Once you're confident with your solder joints, put your cutting pliers at work a
 
 The case has 4 parts (body, chin, cover, camera cap) plus an optional flat spring that can help make the USB cable pop out of the chin. It was designed with OnShape (and Freecad orignally but I had to migrate).
 
-Many iterations went into the design. The whole case could be more compact, especially with a smaller battery and fewer features. For example, without the selfie system the chin system could be removed and the USB cable replaced with a simple dock connector. However after many iterations I decided to prioritizes versatility and ergonomics over compactness.
-
-![A drawing of the case from the OnShape project](../images/3d-model.png)
+Many iterations went into the design. The whole case could be more compact, especially with a smaller battery and fewer features. For example, without the selfie system the chin part could be reduced or removed, and the USB cable replaced with a simple dock connector. However after many iterations I decided to prioritize versatility and ergonomics over compactness.
 
 ![Exploded view from the OnShape project showing all the parts](../images/3d-model-exp.png)
 
