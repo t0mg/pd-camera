@@ -22,7 +22,13 @@ This project is
 
 While I crashed my own Playdate countless times working on this, and it has survived so far, I cannot be held responsible for any damage, data loss, bad selfie, pandemic, etc. that might occur to you while playing with this project. Use this at your own risk. Thanks ❤️.
 
-## Overview
+## How does it work?
+
+If you want to learn more about how this all works, you can head over to [this page](dive.md). Otherwise read on for an overview of each part.
+
+## Hardware
+
+### Configurations
 
 The Playdate can be attached to the camera accessory in three distinct configurations: **cover**, **camera**, and **selfie**.
 
@@ -34,7 +40,7 @@ The Playdate can also be fitted on the back of the accessory, without unplugging
 
 ![Switching to selfie mode](images/selfie-mode.gif)
 
-## Hardware
+### What's inside
 
 The project is based on a [Teensy 4.1 microcontroller](https://www.pjrc.com/store/teensy41.html) that acts as a USB host to the Playdate and communicates with it over serial, including evaluating payloads in the Lua runtime (see [here](https://github.com/jaames/playdate-reverse-engineering/blob/main/usb/usb.md) for more details). The Teensy is also connected to an OV7670 camera module via its CMOS Sensor Interface (CSI) built into the IMXRT1062 MPU and using [this dedicated library](https://github.com/mjborgerson/OV7670). The images produced are 1-bit, QVGA (320x240 pixels) and recorded directly in the Playdate's filesystem. The Teensy takes care of dithering the images in various ways before sending them to the Playdate.
 
@@ -47,6 +53,10 @@ For the detailed bill of material and assembly instructions, hop over to the [ha
 To flash the Teensy microcontroller with the project's firmware, you'll need the [Teensy loader application](https://www.pjrc.com/teensy/loader.html). 
 
 If you don't want to modify the source, you can directly grab a prebuilt `firmware.hex` file from the repository's [releases](https://github.com/t0mg/pd-camera/releases). Otherwise, read on to build your own.
+
+## Companion app
+
+The app that needs to be sideloaded onto the Playdate is located in a [separate repository](https://github.com/t0mg/pd-camera-app).
 
 ### Building
 
