@@ -81,7 +81,7 @@ Once you're confident with your solder joints, put your cutting pliers at work a
 
 The case has 4 parts (body, chin, cover, camera cap) plus an optional flat spring that can help make the USB cable pop out of the chin. It was designed with OnShape (and Freecad orignally but I had to migrate).
 
-Many iterations went into the design. The whole case could be more compact, especially with a smaller battery and fewer features. For example, without the selfie system the chin part could be reduced or removed, and the USB cable replaced with a simple dock connector. However after many iterations I decided to prioritize versatility and ergonomics over compactness.
+Many iterations went into this design. The whole case could be more compact, especially with a smaller battery and fewer features. For example, without the selfie system the chin part could be reduced or removed, and the USB cable replaced with a simple dock connector. However I decided to prioritize versatility and ergonomics over compactness here.
 
 ![Exploded view from the OnShape project showing all the parts](../images/3d-model-exp.png)
 
@@ -96,6 +96,8 @@ Printing takes about 4.5 hours and 61g of filament in total.
 Should you want to make changes, the entire source project is available publicly in OnShape [here](https://cad.onshape.com/documents/e21c7f87f60d07934982913d/w/b97fe7733e7e7384ebf3b9fe/e/61bb6eb626a207e4d2b47202).
 
 ## Putting it all together
+
+The assembly doesn't require any screw or glue, and is fully reversible (mostly because during development, that was really useful).
 
 ### Installing the PCB
 
