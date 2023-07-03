@@ -1,14 +1,12 @@
 # PD-Camera project
 
-PD-Camera is an unofficial, experimental accessory for [Panic Inc.](https://panic.com/)'s [Playdate](https://play.date) handheld console, which as the name hopefully suggests allows the device to record pictures as well as animated gifs, in whopping  1-bit color and QVGA (320x240) resolution. Kind of like the [1998 accessory for that other monochrome handheld device](https://en.wikipedia.org/wiki/Game_Boy_Camera).
+PD-Camera is an unofficial, experimental accessory for [Panic Inc.](https://panic.com/)'s [Playdate](https://play.date) handheld console, which as the name hopefully suggests allows the device to record pictures as well as animated gifs, in whopping  1-bit color and QVGA (320x240) resolution. Kind of similar to the [1998 accessory for that other monochrome handheld device](https://en.wikipedia.org/wiki/Game_Boy_Camera) (which has 2-bit color and fewer pixels).
 
 > **This repository contains the hardware and firmware of the PD-Camera accessory. The source for the companion app that runs on the Playdate itself can be found [here](https://github.com/t0mg/pd-camera-app).**
 
 Here's a one minute intro video (click to watch).
 
 [![Watch the project's trailer video on YouTube](https://img.youtube.com/vi/sbAL9xYFmcQ/0.jpg)](https://www.youtube.com/watch?v=sbAL9xYFmcQ)
-
-For more context on how this project came to be, you can find its devlog [on Playdate's Dev forum](https://devforum.play.date/t/playdate-oneil-camera/11043).
 
 ## Disclaimer
 
@@ -22,9 +20,11 @@ This project is
 
 While I crashed my own Playdate countless times working on this, and it has survived so far, I cannot be held responsible for any damage, data loss, bad selfie, pandemic, etc. that might occur to you while playing with this project. Use this at your own risk. Thanks ❤️.
 
-## How does it work?
+## How does it work? Why does it exist?
 
-If you want to learn more about how this all works, you can head over to [this page](dive.md). Otherwise read on for an overview of each part.
+For more context on how this project came to be, you can find its devlog [on Playdate's Dev forum](https://devforum.play.date/t/playdate-oneil-camera/11043) and a deep dive into how it all works [here](dive.md).
+
+Otherwise read on for an overview of each part.
 
 ## Hardware
 
