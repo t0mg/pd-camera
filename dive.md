@@ -30,7 +30,7 @@ Jaames suggested that I try the eval command to send arbitrary Lua bytecode to b
 
 This involved generating a bytecode "template" which is a simple lua function call, eg. doSomething("0000"). Compiling this file, extracting the bitecode, isolating the zeroes and converting it into a C array hardcoded in the Teensy code. At runtime the teensy uses this template and replacea the zeroes with the data we want to send to the Playdate (it has to be the same number of bytes, e.g. "1234"). Then we craft the eval serial command with this payload. Effectively if all goes well this executes `doSomething("1234")` immediately in the Playdate's Lua context. All that's left to do is to actually declare a `function doSomething(data)` to process the paylod (display the image).
 
-The actual payload for an image is 320x400 bits packed into 9600 8 bit chars, so the teql luq template has 9600 zeroes in it. The code and instructions to create your own custom eval templates is here.
+The actual payload for an image is 320x400 bits packed into 9600 8 bit chars, so the teql luq template has 9600 zeroes in it. The code and instructions to create your own custom eval templates are [here](lua/README.md).
 
 ### But thats not all.
 
