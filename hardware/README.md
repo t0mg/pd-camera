@@ -20,13 +20,13 @@ This folder contains all files and instruction necessary to build the PD-Camera 
 |Angled USB C to USB A cable|1|25 cm minimum; [example (amazon.fr)](https://www.amazon.fr/dp/B07H95NY5Y)
 |PETG filament for the 3D printed parts 🙂|
 |Some wires, solder...|
-| *Optional:* CS mount & CS lenses || TODO: add references
+| *Optional:* CS mount & CS lenses || Read below
 
 ### CS and M12 mounts
 
-Given that OV7670 boards are so cheap, I experimented with various available mounts. The case makes it easy to swap out the entire sensor board so you could have several with each a different lens and/or mount.
+Given that OV7670 boards are so cheap, I got 5 which allowed me to experiment with various  mounts and lenses. The case makes it deliberately easy to swap out the entire sensor board so you could have several with each a different lens and/or mount. Like a DSLR, except you also swap the sensor (no dust yay)!
 
-![A PD-Camera with a CS mount, telephoto lens](../images/cs-lens.jpg)
+![A PD-Camera with a CS mount, telephoto lens. Admittedly looks cooler than with the default plastic lens.](../images/cs-lens.jpg)
 
 Not all mounts are compatible and I had to do a bit of trial and error to find combinations of mounts and lenses that gives interesting results.
 
