@@ -30,7 +30,23 @@ Given that OV7670 boards are so cheap, I experimented with various available mou
 
 Not all mounts are compatible and I had to do a bit of trial and error to find combinations of mounts and lenses that gives interesting results.
 
-// TODO: add some refrerences here if there's interest.
+For the assembly pictured above, I bought [this CS mount (Aliexpress)](https://www.aliexpress.us/item/1005002055725137.html) and paired it with [this 2.8-12mm varifocal lens (Aliexpress)](https://www.aliexpress.us/item/3256802271188587.html).
+
+Pay attention to the sensor distance of the mount. The first CS mount I purchased was too high, and the focal plane of the lenses hovered above the sensor, making it impossible to focus.
+
+To replace the plastic mount that came with my OV7670 boards with this CS mount, I had to offset the screw holes a bit with a rotary tool, as pictured below.
+
+![Fitting a new mount on one of my OV7670 boards](../images/mount-swap1.jpg)
+
+![Making holes where the silkscreen suggests they should have been](../images/mount-swap2.jpg)
+
+![New CS mount secured to the sensor board](../images/mount-swap3.jpg)
+
+> Note: Pay attention to the orientation of the sensor. Some OV7670 boards have it swapped 90 or 180 degrees. The project is designed around this prarticular orientation. While 180 is fixable in the firmware code (setting register REG_MVFP), 90 degrees can not be used without significant modifications to the case and/or PCB.
+
+These things being so cheap, I have plenty more to play with, including wide angle, a metal M12 mount and M12 lenses.
+
+// TODO: add more details here if there's interest, including example pictures and more references of tested lenses/mmounts.
 
 ## Custom PCB
 
@@ -67,11 +83,20 @@ Solder the 2 resistors and the toggle switch to the PCB.
 
 Fit the Teensy flush onto the PCB, solder all pins and then cut off the protruding pins underneath, as short as possible.
 
-Cut 2 female header bars to 9 pins each and solder them to the PCB to create a makeshift connector for the OV7670 module. Also cut off the pins underneath.
+![Cutting Teensy pins flush](../images/hw_cutting-pins.png)
+
+Cut 2 female header bars to 9 pins each and solder them to the PCB to create a makeshift connector for the OV7670 module.
+
+![Cutting female headers](../images/hw_headers.jpg)
+![Camera module connector](../images/hw_camera-connector.jpg)
 
 Cut the angled USB C cable at about 25cm and discard the USB A connector. Strip and solder the 4 USB wires to the PCB (*usually*, red for +5v, white for D-, green for D+, and black for GND).
 
+![Soldering the USB Host cable](../images/hw_usb-cable.jpg)
+
 Solder BATT +5v and GND from the main PCB to the +5 and GND of the power circuit PCB with short wires, and finally solder the + and - battery pads of the power circuit to your LiPo battery. You can also do (or redo) this step after assembling the case in order to optimize your wiring.
+
+![Soldering the power circuit](../images/hw_power.jpg)
 
 Almost done! Time to sideload the Playdate app (from [this repository](https://www.github.com/t0mg/pd-camera-app)) and test your circuit 🙂
 
@@ -93,6 +118,10 @@ Printing takes about 4.5 hours and 61g of filament in total.
 
 ![Screenshot of all the parts in Prusa Slicer](../images/slicer.png)
 
+![Yes, I know, that print is not from the same Slicer project as above. It is from an older version.](../images/hw_3d-print.jpg)
+
+### Editing the project files
+
 Should you want to make changes, the entire source project is available publicly in OnShape [here](https://cad.onshape.com/documents/e21c7f87f60d07934982913d/w/b97fe7733e7e7384ebf3b9fe/e/61bb6eb626a207e4d2b47202).
 
 ## Putting it all together
@@ -113,7 +142,11 @@ Slide the power circuit in place at a 45 degree angle. Insert the female USB C c
 
 The male USB C connector goes through a dedicated hole. Keep the cable loose at this stage.
 
+![Passing the USB cable through its hole in the case](../images/hw_cable-through-hole.jpg)
+
 Flip the case and take the chin piece and your Playdate. Connect it, align it with the chin and work backwards to set the length of the cable.
+
+![Locking the cable in the chin](../images/hw_cable-in-chin.jpg)
 
 You can add the optional spring part by just sliding it into the chin, this little piece helps when the cable is a bit too stiff to pop out naturally, but makes the "cover mode" a bit more difficult. Either way you can easily disassemble the case to add or remove this part later.
 
@@ -121,11 +154,13 @@ Snap fit the chin part into the main body part then flip it back and secure the 
 
 ### Battery
 
-Now is the time to install the battery and tidy all your wires inside the case. The 5000mAh battery fits (barely) under the Teensy, with its edges touching the Teensy and the right side of the connector of the camera module. 
+Now is the time to secure the battery and tidy all your wires inside the case. The 5000mAh battery fits (barely) under the Teensy, with its edges touching the Teensy and the right side of the connector of the camera module (as pictured [above](#usb-cable-and-chin)). 
 
 ### Cover
 
 To put the cover, there are 3 snap fit locks to work with. First align the top one, then the right one. Finally flex the cover and push firmly on the left snap lock. To reopen the case you'd insert a spatula, blade or flat screw driver above the left snap lock and use it as a lever to free it.
+
+![Cover in place with camera modules ready to go](../images/hw_cover.jpg)
 
 ### Camera module and camera cap
 
@@ -133,9 +168,13 @@ You can insert the OV7670 Camera module now.
 
 The camera cap part is also press fit. It comes off easily on purpose, so you can swap the camera module if you have different lens mounts, without having to remove the cover part. Otherwise, you can add a bit of super glue to attach the camera cap to the cover plate permanently.
 
+There is currenlty no cap for larger mounts/lenses such as CS one in the photo above. I don't see this as a major issue as the sensor board holds itself just fine. But for polish reasons, in future updates we might add new caps with stronger fit (eg stap fit joints) and more opening sizes.
+
 ### Magnets
 
-Press fit the eight neodymium magnets into their respective holes. I found that it helps to stack 2 of them to align with the hole and initiate a good vertical fit, then to flip the case and press it flush against a table to push the magnet all the way in. If they feel loose you can add a drop of superglue to secure them.
+Press fit the eight neodymium magnets into their respective holes. I found that it helps to stack 2 of them to align with the hole and initiate a good vertical fit, then to use the handle of a fork or spoon to push the magnet all the way in. If they feel loose  you can add a drop of superglue to secure them (I never had to).
+
+Should you need to reuse these magnets, the case is designed so that you can remove them, by pushing them from the back with a thin screwdriver for the 4 on the chin side, and by pulling them out with small pliers (and cover removed) for the 4 on the back side.
 
 ### Pat yourself in the back
 
