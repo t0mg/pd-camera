@@ -4,7 +4,7 @@ This folder contains all files and instruction necessary to build the PD-Camera 
 
 ## Bill of materials
 
-Not counting the Playdate, the most expensive part here is the Teensy which retails for about 50€. The camera sensor is well under 10€. The PCB price will depend on the manufacturer but you can fo very cheap too. Overall the whole project should cost around 100€ to build.
+Not counting the Playdate, the most expensive part here is the Teensy which retails for about 50€. The camera sensor is well under 10€. The PCB price will depend on the manufacturer but you can go very cheap too. Overall the whole project should cost around 100€ to build.
 
 |Item| Quantity|Notes
 |---|---|---|
