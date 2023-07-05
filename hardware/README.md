@@ -38,7 +38,7 @@ Pay attention to the sensor distance of the mount. The first CS mount I purchase
 
 To replace the plastic mount that came with my OV7670 boards with this CS mount, I had to offset the screw holes a bit with a rotary tool, as pictured below.
 
-<a href="../images/mount-swap1.jpg" ><img title="Fitting a new mount on one of my OV7670 boards" src="../images/mount-swap1.jpg" style="max-height:400px">></a> <a href="../images/mount-swap2.jpg"><img title="Making holes where the silkscreen suggests they should have been" src="../images/mount-swap2.jpg" style="max-height:400px">></a> <a href="../images/mount-swap3.jpg"><img title="New CS mount secured to the sensor board" src="../images/mount-swap3.jpg" style="max-height:400px">></a>
+<a href="../images/mount-swap1.jpg" ><img title="Fitting a new mount on one of my OV7670 boards" src="../images/mount-swap1.jpg" style="max-height:400px"></a> <a href="../images/mount-swap2.jpg"><img title="Making holes where the silkscreen suggests they should have been" src="../images/mount-swap2.jpg" style="max-height:400px"></a> <a href="../images/mount-swap3.jpg"><img title="New CS mount secured to the sensor board" src="../images/mount-swap3.jpg" style="max-height:400px"></a>
 
 > Note: Pay attention to the orientation of the sensor. Some OV7670 boards have it swapped 90 or 180 degrees. The project is designed around this prarticular orientation. While 180 is fixable in the firmware code (setting register REG_MVFP), 90 degrees can not be used without significant modifications to the case and/or PCB.
 
@@ -56,7 +56,7 @@ This is the wiring implemented by the PCB, it follows the documentation from the
 
 The Gerber file for the PCB can be found [in the pcb folder](pcb/). It's 2 layer, standard thickness (1.57mm / 0.062 in). You can get one made from services such as [OSH Park](https://oshpark.com/) or [JLCPCB](https://jlcpcb.com/) for a few USD.
 
-<img title="A rendered view of the PCB" src="../images/pcb.png" style="max-height:400px">>
+<img title="A rendered view of the PCB" src="../images/pcb.png" style="max-height:400px">
 
 The large empty and seemingly useless part of the PCB is actually visible through button pockets on the face of the case, so the color you'll pick for the PCB matters. You can also customize the bottom silk screen with markings that will be visible when the Playdate is not installed!
 
@@ -81,19 +81,19 @@ Solder the 2 resistors and the toggle switch to the PCB.
 
 Fit the Teensy flush onto the PCB, solder all pins and then cut off the protruding pins underneath, as short as possible.
 
-<img title="Cutting Teensy pins flush" src="../images/hw_cutting-pins.jpg" style="max-height:400px">>
+<img title="Cutting Teensy pins flush" src="../images/hw_cutting-pins.jpg" style="max-height:400px">
 
 Cut 2 female header bars to 9 pins each and solder them to the PCB to create a makeshift connector for the OV7670 module.
 
-<img title="Cutting female headers" src="../images/hw_headers.jpg" style="max-height:400px">> <img title="Camera module connector" src="../images/hw_camera-connector.jpg" style="max-height:400px">>
+<img title="Cutting female headers" src="../images/hw_headers.jpg" style="max-height:400px"> <img title="Camera module connector" src="../images/hw_camera-connector.jpg" style="max-height:400px">
 
 Cut the angled USB C cable at about 25cm and discard the USB A connector. Strip and solder the 4 USB wires to the PCB (*usually*, red for +5v, white for D-, green for D+, and black for GND).
 
-<img title="Soldering the USB Host cable" src="../images/hw_usb-cable.jpg" style="max-height:400px">>
+<img title="Soldering the USB Host cable" src="../images/hw_usb-cable.jpg" style="max-height:400px">
 
 Solder BATT +5v and GND from the main PCB to the +5 and GND of the power circuit PCB with short wires, and finally solder the + and - battery pads of the power circuit to your LiPo battery. You can also do (or redo) this step after assembling the case in order to optimize your wiring.
 
-<img title="Soldering the power circuit" src="../images/hw_power.jpg" style="max-height:400px">>
+<img title="Soldering the power circuit" src="../images/hw_power.jpg" style="max-height:400px">
 
 Almost done! Time to sideload the Playdate app (from [this repository](https://www.github.com/t0mg/pd-camera-app)) and test your circuit 🙂
 
@@ -131,7 +131,7 @@ The PCB slides in and snaps without the need of any tool but it is a tight fit a
 
 Start with the top of the PCB, fitting the little power switch through its hole in the case. Make sure the PCB is flush to the left side of the case, then lower its bottom part slowly. You'll now need to align the Teensy's USB port to the hole in the case on the right. Once it's aligned, push the PCB to the right so it gets in by a millimeter or so. Now press firmly on the PCB to snap it past the tiny leg on the right between USB and power wires, and then the snap lock on the bottom left. It's quite tight, but you can flex the edge of the case slightly outwards near the snap lock while pressing to help the PCB make it through.
 
-### Power circit
+### Power circuit
 
 Slide the power circuit in place at a 45 degree angle. Insert the female USB C connector into its socket, then press the back of the board to lock it in place. It should be horizontal.
 
