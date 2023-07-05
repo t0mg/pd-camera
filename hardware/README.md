@@ -1,6 +1,6 @@
 This folder contains all files and instruction necessary to build the PD-Camera hardware.
 
-![A drawing of the case from the OnShape project](../images/3d-model.png)
+<img title="A drawing of the case from the OnShape project" src="../images/3d-model.png" style="max-height:400px">>
 
 ## Bill of materials
 
@@ -36,11 +36,7 @@ Pay attention to the sensor distance of the mount. The first CS mount I purchase
 
 To replace the plastic mount that came with my OV7670 boards with this CS mount, I had to offset the screw holes a bit with a rotary tool, as pictured below.
 
-![Fitting a new mount on one of my OV7670 boards](../images/mount-swap1.jpg)
-
-![Making holes where the silkscreen suggests they should have been](../images/mount-swap2.jpg)
-
-![New CS mount secured to the sensor board](../images/mount-swap3.jpg)
+<a href="../images/mount-swap1.jpg" ><img title="Fitting a new mount on one of my OV7670 boards" src="../images/mount-swap1.jpg" style="max-height:400px">></a> <a href="../images/mount-swap2.jpg"><img title="Making holes where the silkscreen suggests they should have been" src="../images/mount-swap2.jpg" style="max-height:400px">></a> <a href="../images/mount-swap3.jpg"><img title="New CS mount secured to the sensor board" src="../images/mount-swap3.jpg" style="max-height:400px">></a>
 
 > Note: Pay attention to the orientation of the sensor. Some OV7670 boards have it swapped 90 or 180 degrees. The project is designed around this prarticular orientation. While 180 is fixable in the firmware code (setting register REG_MVFP), 90 degrees can not be used without significant modifications to the case and/or PCB.
 
@@ -58,7 +54,7 @@ This is the wiring implemented by the PCB, it follows the documentation from the
 
 The Gerber file for the PCB can be found [in the pcb folder](pcb/). It's 2 layer, standard thickness (1.57mm / 0.062 in). You can get one made from services such as [OSH Park](https://oshpark.com/) or [JLCPCB](https://jlcpcb.com/) for a few USD.
 
-![A rendered view of the PCB](../images/pcb.png)
+<img title="A rendered view of the PCB" src="../images/pcb.png" style="max-height:400px">>
 
 The large empty and seemingly useless part of the PCB is actually visible through button pockets on the face of the case, so the color you'll pick for the PCB matters. You can also customize the bottom silk screen with markings that will be visible when the Playdate is not installed!
 
@@ -83,20 +79,19 @@ Solder the 2 resistors and the toggle switch to the PCB.
 
 Fit the Teensy flush onto the PCB, solder all pins and then cut off the protruding pins underneath, as short as possible.
 
-![Cutting Teensy pins flush](../images/hw_cutting-pins.png)
+<img title="Cutting Teensy pins flush" src="../images/hw_cutting-pins.jpg" style="max-height:400px">>
 
 Cut 2 female header bars to 9 pins each and solder them to the PCB to create a makeshift connector for the OV7670 module.
 
-![Cutting female headers](../images/hw_headers.jpg)
-![Camera module connector](../images/hw_camera-connector.jpg)
+<img title="Cutting female headers" src="../images/hw_headers.jpg" style="max-height:400px">> <img title="Camera module connector" src="../images/hw_camera-connector.jpg" style="max-height:400px">>
 
 Cut the angled USB C cable at about 25cm and discard the USB A connector. Strip and solder the 4 USB wires to the PCB (*usually*, red for +5v, white for D-, green for D+, and black for GND).
 
-![Soldering the USB Host cable](../images/hw_usb-cable.jpg)
+<img title="Soldering the USB Host cable" src="../images/hw_usb-cable.jpg" style="max-height:400px">>
 
 Solder BATT +5v and GND from the main PCB to the +5 and GND of the power circuit PCB with short wires, and finally solder the + and - battery pads of the power circuit to your LiPo battery. You can also do (or redo) this step after assembling the case in order to optimize your wiring.
 
-![Soldering the power circuit](../images/hw_power.jpg)
+<img title="Soldering the power circuit" src="../images/hw_power.jpg" style="max-height:400px">>
 
 Almost done! Time to sideload the Playdate app (from [this repository](https://www.github.com/t0mg/pd-camera-app)) and test your circuit 🙂
 
@@ -108,7 +103,7 @@ The case has 4 parts (body, chin, cover, camera cap) plus an optional flat sprin
 
 Many iterations went into this design. The whole case could be more compact, especially with a smaller battery and fewer features. For example, without the selfie system the chin part could be reduced or removed, and the USB cable replaced with a simple dock connector. However I decided to prioritize versatility and ergonomics over compactness here.
 
-![Exploded view from the OnShape project showing all the parts](../images/3d-model-exp.png)
+<img title="Exploded view from the OnShape project showing all the parts" src="../images/3d-model-exp.png" style="max-height:600px">
 
 ### Printing instructions
 
@@ -116,9 +111,9 @@ You can find the STL files [here](/hardware/case/). All the parts can be printed
 
 Printing takes about 4.5 hours and 61g of filament in total.
 
-![Screenshot of all the parts in Prusa Slicer](../images/slicer.png)
+<img title="Screenshot of all the parts in Prusa Slicer" src="../images/slicer.png" style="max-height:400px">
 
-![Yes, I know, that print is not from the same Slicer project as above. It is from an older version.](../images/hw_3d-print.jpg)
+<img title="Yes, I know, that print is not from the same Slicer project as above. It is from an older version." src="../images/hw_3d-print.jpg" style="max-height:400px">
 
 ### Editing the project files
 
@@ -142,11 +137,11 @@ Slide the power circuit in place at a 45 degree angle. Insert the female USB C c
 
 The male USB C connector goes through a dedicated hole. Keep the cable loose at this stage.
 
-![Passing the USB cable through its hole in the case](../images/hw_cable-through-hole.jpg)
+<img title="Passing the USB cable through its hole in the case" src="../images/hw_cable-through-hole.jpg" style="max-height:400px">
 
 Flip the case and take the chin piece and your Playdate. Connect it, align it with the chin and work backwards to set the length of the cable.
 
-![Locking the cable in the chin](../images/hw_cable-in-chin.jpg)
+<img title="Locking the cable in the chin" src="../images/hw_cable-in-chin.jpg" style="max-height:400px">
 
 You can add the optional spring part by just sliding it into the chin, this little piece helps when the cable is a bit too stiff to pop out naturally, but makes the "cover mode" a bit more difficult. Either way you can easily disassemble the case to add or remove this part later.
 
@@ -160,7 +155,7 @@ Now is the time to secure the battery and tidy all your wires inside the case. T
 
 To put the cover, there are 3 snap fit locks to work with. First align the top one, then the right one. Finally flex the cover and push firmly on the left snap lock. To reopen the case you'd insert a spatula, blade or flat screw driver above the left snap lock and use it as a lever to free it.
 
-![Cover in place with camera modules ready to go](../images/hw_cover.jpg)
+<img title="Cover in place with camera modules ready to go" src="../images/hw_cover.jpg" style="max-height:400px">
 
 ### Camera module and camera cap
 
