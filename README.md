@@ -8,6 +8,10 @@ Here's a one minute intro video (click to watch).
 
 [![Watch the project's trailer video on YouTube](https://img.youtube.com/vi/sbAL9xYFmcQ/0.jpg)](https://www.youtube.com/watch?v=sbAL9xYFmcQ)
 
+And a four minute demo that was part of [Tiny Yellow Machine](https://www.youtube.com/@TinyYellowMachine)'s Playdate Community Direct. Goes a bit more into details and shows video recording (click to watch).
+
+[![Longer demo introducing video feature, as part of the TYM Community Direct](https://img.youtube.com/vi/dU_6qfiDft4/0.jpg)](https://youtu.be/dU_6qfiDft4?t=1531)
+
 ## Disclaimer
 
 This project is 
