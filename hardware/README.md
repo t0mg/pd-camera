@@ -44,7 +44,7 @@ To replace the plastic mount that came with my OV7670 boards with this CS mount,
 
 These things being so cheap, I have plenty more to play with, including wide angle, a metal M12 mount and M12 lenses.
 
-// TODO: add more details here if there's interest, including example pictures and more references of tested lenses/mmounts.
+> // TODO: add more details here if there's interest, including example pictures and more references of tested lenses/mounts.
 
 ## Custom PCB
 
