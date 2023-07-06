@@ -17,10 +17,8 @@ And a four minute demo that was part of [Tiny Yellow Machine](https://www.youtub
 This project is 
 - not affiliated with nor endorsed by [Panic Inc.](https://panic.com/), 
 - highly experimental,
-- hacky in 
-  - every
-  - possible
-  - way.
+- very hacky,
+   - oh so hacky.
 
 While I crashed my own Playdate countless times working on this, and it has survived so far, I cannot be held responsible for any damage, data loss, bad selfie, pandemic, etc. that might occur to you while playing with this project. Use this at your own risk. Thanks ❤️.
 
@@ -40,7 +38,7 @@ The accessory is holding onto the Playdate with small magnets. In **camera mode*
 
 ![Transforming from cover mode to camera mode](images/cover-mode.gif)
 
-The Playdate can also be fitted on the back of the accessory, without unplugging the cable, allowing to switch the camera to **selfie mode** (the companion app has a mirror optiono so it doesn't feel awkward). Additional magnets are here to secure the console in this configuration too.
+The Playdate can also be fitted on the back of the accessory, without unplugging the cable, allowing to switch the camera to **selfie mode** (the companion app has a mirror option so it doesn't feel awkward). Additional magnets are here to secure the console in this configuration too.
 
 ![Switching to selfie mode](images/selfie-mode.gif)
 
