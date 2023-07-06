@@ -13,10 +13,8 @@ Here's a one minute intro video (click to watch).
 This project is 
 - not affiliated with nor endorsed by [Panic Inc.](https://panic.com/), 
 - highly experimental,
-- hacky in 
-  - every
-  - possible
-  - way.
+- very hacky,
+   - oh so hacky.
 
 While I crashed my own Playdate countless times working on this, and it has survived so far, I cannot be held responsible for any damage, data loss, bad selfie, pandemic, etc. that might occur to you while playing with this project. Use this at your own risk. Thanks ❤️.
 
