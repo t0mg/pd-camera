@@ -10,7 +10,7 @@ Not counting the Playdate, the most expensive part here is the Teensy which reta
 |---|---|---|
 |Custom PCB|1|Order from [JLCPCB](https://jlcpcb.com) or [OSH Park](https://oshpark.com/) see Gerber files
 |Teensy 4.1 microcontroller| 1|[PJCRC store](https://www.pjrc.com/store/teensy41.html)
-|OV7670 camera module|1|[Example (amazon.fr)](https://www.amazon.fr/dp/B07V1FCLXG?) ⚠️ these are AZDelivery brand. Some similar boards with identicak pinout differ in the orientation of the sensor and will not be compatible out of the box.
+|OV7670 camera module|1|[Example (amazon.fr)](https://www.amazon.fr/dp/B07V1FCLXG?) ⚠️ these are AZDelivery brand. I found that similar boards with identical pinout sometimes differ in the orientation of the sensor and will not be compatible out of the box.
 |Male headers, 24 pins |2 |0.1 inch (2.54 mm) spacing, for the Teensy
 |Male headers,  4 or 5 pins |1 |0.1 inch (2.54 mm) spacing, for the Teensy's USB host port
 |Female headers, 9pins | 2 | 0.1 inch (2.54 mm) spacing, for the camera module, to be cut from a standard length header
