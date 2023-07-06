@@ -34,7 +34,7 @@ The accessory is holding onto the Playdate with small magnets. In **camera mode*
 
 ![Transforming from cover mode to camera mode](images/cover-mode.gif)
 
-The Playdate can also be fitted on the back of the accessory, without unplugging the cable, allowing to switch the camera to **selfie mode** (the companion app has a mirror optiono so it doesn't feel awkward). Additional magnets are here to secure the console in this configuration too.
+The Playdate can also be fitted on the back of the accessory, without unplugging the cable, allowing to switch the camera to **selfie mode** (the companion app has a mirror option so it doesn't feel awkward). Additional magnets are here to secure the console in this configuration too.
 
 ![Switching to selfie mode](images/selfie-mode.gif)
 
